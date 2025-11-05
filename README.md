@@ -19,9 +19,21 @@ This porject compares **MySQL on VM** vs **Managed MySQL Service** using:
 
 ------
 ### Repo Structure
-
-├───docs/comparison.md/setup_notes_managed.md/setup_notes_vm.md/
-├───screenshots/managed/vm/
-└───scripts/managed_demo.py/vm_demo.py/env.sample/
-
+HHA504_mysql_vm_vs_managed/
+├─ README.md
+├─ .gitignore
+├─ .env.example
+├─ requirements.txt
+├─ scripts/
+│   ├─ vm_demo.py
+│   └─ managed_demo.py
+├─ sql/
+│   └─ init.sql (optional)
+├─ screenshots/
+│   ├─ vm/
+│   └─ managed/
+└─ docs/
+├─ setup_notes_vm.md
+├─ setup_notes_managed.md
+└─ comparison.md
 
