@@ -26,5 +26,7 @@ This porject compares **MySQL on VM** vs **Managed MySQL Service** using:
 ### Repo Structure
 
 ├───docs/comparison.md/setup_notes_managed.md/setup_notes_vm.md/
+
 ├───screenshots/managed/vm/
+
 └───scripts/managed_demo.py/vm_demo.py
