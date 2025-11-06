@@ -24,11 +24,11 @@ engine = create_engine(f"mysql+pymysql://{_user}:{_pwd}@{host}:{port}/{_db}?char
 
 # Create database if not exists
 with engine.connect()as conn:
-    conn.execute(f"CREATE DATABASE IF NOT EXISTS {db_name}")
-    conn.execute(f"USE {db_name}")
+    conn.execute(f"CREATE DATABASE IF NOT EXISTS {db_name}") # type: ignore
+    conn.execute(f"USE {db_name}") # type: ignore
 
     # Radiology porcedures  data
-    data = {
+    data = { # type: ignore
         "procedure_code": ["XR101", "CT202", "MRI303", "US404"],
         "procedure_name": ["X-Ray Spine", "CT Chest", "MRI Knee", "Ultrasound Liver"],
         # must match number of procedure rows (4)
@@ -39,7 +39,7 @@ df = pd.DataFrame(data)
 df.to_sql("radiology_procedures", con=engine, if_exists="replace", index=False)
 
 # Read back
-result = pd.read_sql("SELECT * FROM radiology_procedures", con=engine)
+result = pd.read_sql("SELECT * FROM radiology_procedures", con=engine) # type: ignore
 print(result)
 print(f"Row count: {len(result)}")
       
