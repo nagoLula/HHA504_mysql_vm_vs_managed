@@ -5,10 +5,13 @@
 #
 # Env vars (populate a local .env):
 #   MAN_DB_HOST, MAN_DB_PORT, MAN_DB_USER, MAN_DB_PASS, MAN_DB_NAME
-import os, time
-from turtle import pd
+
+import os
+import time
+import pandas as pd
 from sqlalchemy import create_engine, text
 from dotenv import load_dotenv
+
 
 # --- 0) Load env vars
 load_dotenv(".env") # reads .env file in current dir
