@@ -1,27 +1,31 @@
 # HHA504_mysql_vm_vs_managed
 
-## Homework: MySQL on VM vs Managed Service (SQL Alchemy + pandas)
+## Homework: MySQL on VM vs Managed Service (SQLAlchemy + pandas)
 
 ### Cloud & Region
 
+- **Cloud Provider(s)**: Azure (VM + Managed MySQL)
+- **Region**: East US (eastus)
+
 ### Cloud Providers Considered
 
-- **Azure**: Azure Database for MYSQL - Flexible Server
-- **GCP**: Cloud SQL for MYSQL
+- **Azure**: Azure Database for MySQL – Flexible Server
+- **GCP**: Cloud SQL for MySQL
 - **Oracle Cloud (OCI)**: MySQL Database Service (MDS)
-- **Region:** [e.g., us-east1]
 
-*Final implementation will use one or two of the above providers. This README will be updated accordingly.*
+*Final implementation uses Azure for both VM and Managed MySQL.*
+
+---
 
 ### Overview
 
-This porject compares **MySQL on VM** vs **Managed MySQL Service** using:
+This project compares **MySQL on a self-managed VM** vs **Managed MySQL Service** using:
 
-- **SQLALchemy** for database connectivity
-- **pandas** for data manpulation
-- **Radiology procedures dataset** for demonstration
+- **SQLAlchemy** for database connectivity
+- **pandas** for data manipulation
+- A small **radiology_procedures dataset** for demonstration
 
-------
+---
 
 ### Repo Structure
 
