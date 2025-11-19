@@ -17,6 +17,24 @@ This script will create a `radiology_procedures` table and insert demo rows.
 import os
 import time
 import argparse
+
+parser = argparse.ArgumentParser()
+parser.add_argument('--env', choices=['azure', 'vm', 'gcp'], required=True)
+parser.add_argument('--sqlite', action='store_true')
+args = parser.parse_args()
+
+# Use args.env to control logic
+print(f"Running in {args.env} mode")
+
+if args.sqlite:
+    print("[MODE] --sqlite given: forcing SQLite fallback")
+elif args.env == "azure":
+    print("[MODE] Using Azure Managed MySQL")
+elif args.env == "vm":
+    print("[MODE] Using VM (Self-managed MySQL on Azure VM)")
+elif args.env == "gcp":
+    print("[MODE] Using GCP Managed MySQL")
+
 import pandas as pd
 from sqlalchemy import create_engine, text
 from dotenv import load_dotenv
