@@ -34,6 +34,6 @@
 - Azure’s structure aligns better with how I troubleshoot and document workflows.
 - In the future, I would rather continue with **Azure Database for MySQL** as my preferred managed solution.
 
-  ## Overall
+## Overall
 
-- I would try again, a fresh start, the same project, to make sure I understand fully, and just to practice
+- I would try again, a fresh start, the same project, to make sure I understand fully, and just to practice.
