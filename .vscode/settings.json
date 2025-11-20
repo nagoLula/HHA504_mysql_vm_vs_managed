@@ -1,4 +1,45 @@
 {
     "python.defaultInterpreterPath": "${workspaceFolder}\\.venv\\Scripts\\python.exe",
-    "python.analysis.extraPaths": []
+    "python.analysis.extraPaths": [],
+    "sqltools.connections": [
+        {
+            "mysqlOptions": {
+                "authProtocol": "default",
+                "enableSsl": "Preferred"
+            },
+            "ssh": {
+                "enabled": false
+            },
+            "previewLimit": 50,
+            "server": "naira-mysql-server.mysql.database.azure.com",
+            "port": 3306,
+            "sshOptions": {
+                "port": 22
+            },
+            "driver": "MySQL",
+            "name": "Azure",
+            "group": "Azure servers",
+            "database": "class_db_netid",
+            "username": "naira_user@naira-mysql-server",
+            "password": "Tulula13"
+        },
+        {
+            "mysqlOptions": {
+                "authProtocol": "default",
+                "enableSsl": "Disabled"
+            },
+            "ssh": "Disabled",
+            "previewLimit": 50,
+            "server": "naira-mysql-demo-server.mysql.database.azure.com",
+            "port": 3306,
+            "sshOptions": {
+                "port": 22
+            },
+            "driver": "MySQL",
+            "name": "Azure",
+            "group": "Azure servers",
+            "database": "class_db_netid",
+            "username": "naira_user"
+        }
+    ]
 }
