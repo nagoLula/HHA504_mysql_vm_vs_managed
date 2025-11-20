@@ -45,7 +45,13 @@ You can embed them in markdown like this:
 
 ```markdown
 ## Managed Demo
-[![Managed Demo Video](../screenshots/managed/cloudsql_instance.png)](../videos/managed_demo.mp4)
+https://github.com/user-attachments/assets/f0c43311-b1a6-4191-bf25-6c833ea30c53
 
 ## VM Demo
-[![VM Demo Video](../screenshots/vm/mysql_conf.png)](../videos/vm_demo.mp4)
+
+https://github.com/user-attachments/assets/18c9cb82-9102-4527-99a1-593da4ef816c
+
+https://github.com/user-attachments/assets/1197d9d6-1d6d-4dfd-9793-c2af3e04e3bd
+
+https://github.com/user-attachments/assets/83b5123b-daaf-4b3a-a499-4ce7695d64f7
+
