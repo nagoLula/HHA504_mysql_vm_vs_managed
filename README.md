@@ -75,11 +75,12 @@ engine = create_engine(connection_string)
        # fallback to SQLite
        engine = create_engine("sqlite:///managed_demo_local.db")
 
-### Connection Test Video
+### Connection Test Video/Screenshot:
 
 The video & the screenshot show testing the Azure Flexible Server connection, the resulting error, and the SQLite fallback.
 
-https://github.com/user-attachments/assets/alt="TEST" src="https://github.com/user-attachments/assets/bafda449-a685-4b63-8815-25f941693b10" />
+<img width="1171" height="679" alt="Screenshot 2025-11-27 205404" src="https://github.com/user-attachments/assets/4b767e9e-12bc-44cd-ac3e-27bd3e9586b7" />
+
 
 https://github.com/user-attachments/assets/2a141ec8-f18b-4f6c-aca4-1cd2c56b0066
 
